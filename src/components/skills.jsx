@@ -7,7 +7,7 @@ import useScrollSnap from "react-use-scroll-snap";
 function Skills() {
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 50, delay: 20 });
-    const linkList = ['/images/skills-logo/html.png','/images/skills-logo/css.png','/images/skills-logo/js.png','/images/skills-logo/node.png','/images/skills-logo/pg.png','/images/skills-logo/react1.png']
+    const linkList = ['/images/skills-logo/html.png','/images/skills-logo/CSS.png','/images/skills-logo/js.png','/images/skills-logo/node.png','/images/skills-logo/pg.png','/images/skills-logo/react1.png']
     const linkList2 = ['/images/skills-logo/github.png','/images/skills-logo/matlab.png','/images/skills-logo/sim.png','/images/skills-logo/keil.png']
     const linkList3 = ['/images/skills-logo/c.png','/images/skills-logo/cpp.png','/images/skills-logo/py.png','/images/skills-logo/java.png']
   return (
