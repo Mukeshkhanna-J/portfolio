@@ -1,0 +1,607 @@
+
+body{
+  background-color: black;
+ }
+ .body{
+  margin: 0px;
+  padding: 0px;
+  background-image: url("https://transparenttextures.com/patterns/black-scales.png");
+} 
+
+
+
+
+
+/* first page */
+.title-page{
+  height:100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+header{
+  height:6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+header>ul{
+  padding:.7rem;
+  border-radius: 5%;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px 0px;
+
+}
+.header{
+    background-color:transparent;
+    height:6rem;
+    margin-bottom: 3rem;
+}
+.options{
+  z-index: 99;
+  color: aliceblue;
+  width:5rem;
+  height: 6rem;
+  position: absolute;
+  display: flex;
+  justify-content:end;
+  align-items: center;
+}
+.options-btn{
+  display:flex;
+  justify-content: end;
+  width: 100%;
+  position:absolute;
+}
+.options-btn button{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  opacity: 0.25;
+  background-color: #8CABFF;
+  text-align: end;
+  position: fixed;
+  z-index: 999;
+  top: 3rem;
+  right: 2rem;
+}
+
+.title-text{
+    display:flex;
+    flex-direction: column;
+    height:45vh;
+    animation: bor 3s linear 1;
+    position: relative;
+}
+.title-text::before{
+  content: "";
+  inset:0 0 -4px;
+  background:linear-gradient(90deg,#000 5%,rgb(140, 171, 255,1) 30%,#000 80%,#000 100%);
+  position: absolute;
+  
+  animation : lineunder 2s linear 1;
+  z-index: -2;
+}
+@keyframes lineunder {
+  0%{background-size: 20%;}
+  100%{background-size: 100%;}
+}
+.title-text::after{
+  content: "";
+  background-color: black;
+  inset:-1px;
+  z-index: -1;
+  position: absolute;
+}
+
+.nav-link{
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing:3px;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+.nav-link:hover{
+  transform: scale(1.1) translatey(-0.5rem);
+  font-weight: bolder;
+}
+
+.name{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    line-height: 6rem;
+  }
+.mukeshkhanna{
+  position: relative;
+  font-weight:900;
+  letter-spacing: 3rem;
+  color:transparent;
+  -webkit-background-clip: text;
+
+   background-image:linear-gradient(
+    90deg,
+    /* #1B262C 0% */
+    #512B81 10%,
+    #557deb 30%,
+    #8CABFF 50%,
+    #c9e0ff 60%,
+    #8CABFF 70%,
+    #557deb 90%,
+    #512B81 100%
+
+  ); 
+  background-size: 80%;
+  animation: gradient 10s linear infinite;
+}
+
+
+
+@media(max-width:768px){
+  .mukeshkhanna,.name{
+    font-size:2rem;
+    letter-spacing:0.5rem;
+  }
+}
+  
+ 
+  @keyframes gradient {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  .title-page-img{
+    display: flex;
+    height:250px;
+    justify-content: right;
+    padding-bottom: 10px;    
+  }
+  .occ{
+    display: flex;
+    justify-content: start;
+    padding: 0%;
+  }
+  .typewriter{
+    font-family: "Raleway", sans-serif;
+    text-transform:uppercase;
+    font-weight: 100;
+    margin:3rem;
+    margin-left: 0rem;
+    letter-spacing: .5rem;
+    color:#8CABFF;
+    font-size: 2.5rem;
+  }
+  .logo1{
+  transition: transform 0.5s ease;
+  }
+  .logo1:hover{
+  transform:scale(1.2)
+  }
+  #about-photo{
+    height:150px;
+    width:150px;
+    object-fit:cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+  }
+  #about-photo:hover{
+    transform:scale(1.2)
+  }
+ .heading-text{
+  color:#A6D1E6;
+  font-family:'Merienda', cursive;
+ } 
+
+
+
+
+
+
+/* about page */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  width: 100%;
+  justify-content:center;
+  align-items:center;
+  gap:4rem;
+}
+
+ .about-card2 {
+  height: 20rem;
+  width: 35rem;
+  padding: 2rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: #8CABFF;
+  background-color: black ;
+  position: relative;
+  cursor: pointer;
+  transition: height 1.5s,width 0.3s;
+}
+.about-card2 div{
+  display: flex;
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+}
+.about-card2 div p{
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+  color:	#E0F0FF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+.about-card2 div p a{
+  margin:1rem;
+  margin-left: 0%;
+  padding:0.7rem;
+  border: 0.1rem solid #82a2fa;
+  border-radius: 10rem;
+  background-color: black;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  color:#8CABFF;
+  transition: border-radius 0.8s;
+}
+.about-card2 div p a:hover{
+  border-radius:0.5rem;
+}
+.end{
+  font-family: "Playwrite BE VLG", cursive;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+.img-div{
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 2rem;
+}
+.img-div img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+} 
+
+.about-card2::before,
+.about-card2::after {
+  content: "";
+  position: absolute;
+  inset: -0.25rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    #311a4e,
+    #4477CE,
+    #82a2fa,
+    #8CABFF,
+    #b6d2fa, 
+    #4477CE,
+    #321a4f
+  );
+
+  animation: grad-rot 7s linear infinite;
+  border-radius: inherit;
+} 
+
+ .about-card2::after {
+  filter: blur(1.5rem);
+} 
+.about-card2:hover{
+  height:30rem;
+  width:65rem;
+}
+.about-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #8CABFF;
+  transform: translateY(7.5rem);
+}
+
+@keyframes grad-rot {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+@media(max-width:576px){
+  .about-card2{
+    height: auto;
+    width:auto;
+    margin:20px;
+    height:20rem;
+  }
+  .about-card2:hover{
+    width:auto;
+    margin:20px;
+    margin-bottom: 10rem;
+  }
+}
+
+
+
+
+
+/* skills page */
+#skills{
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.skills-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #8CABFF;
+}
+.skills-sub{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #8CABFF;
+  letter-spacing: 0.5rem;
+}
+
+.c-plate{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  margin:2rem;
+  width:75%;
+  border-radius: 15px;
+  position: relative;
+}
+.card::after{
+  content: "";
+  position: absolute;
+  inset: -0.25rem;
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(10px);
+}
+.card::before{
+  content: "";
+  position: absolute;
+  inset: -0.15rem;
+  border-radius: inherit;
+  z-index: -2;
+}
+.card::after,.card::before{
+  background: linear-gradient(225deg, rgba(140,171,255,0.7) 0%, rgba(0,0,0,1) 50%, rgba(140,171,255,0.7) 100%);
+}
+.image-wrapper{
+  height: 25vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image-wrapper > img{
+  height:100px;
+  width:100px;
+  transition: transform 0.3s;
+}
+.imagi:hover{
+  transform: scale(1.1);
+}
+.carousel{
+  height:50vh;
+  width:80%;
+}
+.carousel-indicators{
+  transform: translateY(12rem);
+}
+.card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-title{
+  color: #82a2fa !important;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+}
+@media (max-width:567px){
+  .cards-wrapper{
+    flex-direction: column;
+  }
+  #skills{
+    height:60rem;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  .carousel-control-next,.carousel-control-prev{
+    height:40rem;
+  }
+}
+
+
+
+
+
+/* work */
+
+/* card-details */
+.work-section {
+  height: 100vh;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  color: #8CABFF;
+  position: relative;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  padding-top: 4rem;
+}
+
+.img-wrapper {
+  height: 50vh;
+  position: sticky;
+  top: 10rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.img-wrapper img {
+  max-height: 100%; 
+  width: auto; 
+}
+
+.li-work div{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 100vh;
+  margin:5rem;
+  scroll-snap-align: top;
+}
+@media (max-width:567px){
+  .li-work{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+/* contact */
+#contact-me{
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card{
+  height:30rem;
+  width:45rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border-radius: 3rem;
+  position: relative;
+  transition: all 1s ease;
+}
+.contact-card::before{
+  position:absolute;
+  content: "";
+  border-radius: inherit;
+  background: linear-gradient(225deg, rgba(140,171,255,0.7) 0%, rgba(0,0,0,1) 50%, rgba(140,171,255,0.7) 100%);
+  inset: -0.2rem;
+  z-index: -2;
+}
+.contact-card::after{
+  position:absolute;
+  content: "";
+  border-radius: inherit;
+  filter:blur(20px);
+  inset:-0.5rem;
+  z-index: -3;
+  background: linear-gradient(225deg, rgba(140,171,255,0.7) 0%, rgba(0,0,0,1) 50%, rgba(140,171,255,0.7) 100%);
+  opacity: 0; 
+  transition: opacity 0.8s; 
+}
+.contact-card:hover::after {
+  opacity: 1;
+}
+.contact-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:6rem;
+  width: auto;
+  margin:2rem;
+}
+.contact-body h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #8CABFF;
+}
+.contact-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  width:8rem;
+}
+
+.contact-card div h3{
+  font-family: "Playwrite BE VLG", cursive;
+  transition: color 1.5s;
+  font-weight: 200;
+}
+.contact-card:hover div h3{
+  color: aliceblue;
+}
+
+/* footer */
+footer{
+  display:flex;
+  justify-content: center;
+  align-items: baseline;
+  font-family:'Merienda', cursive;
+}
